@@ -2,7 +2,7 @@
 
 # <mark>instructions</mark>
 
-1. Enter a full path or relative path to your target .json chat log
+1. Enter a full path or relative path to your target .json chat log - They generally have no extension at all but assume them as JSON.
 
 2. Enter a full path or relative path to the desired output filename and always set .md
    
