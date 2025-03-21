@@ -1,0 +1,101 @@
+{
+  "runSettings": {
+    "temperature": 1.0,
+    "model": "models/gemini-2.0-pro-exp-02-05",
+    "topP": 0.95,
+    "topK": 64,
+    "maxOutputTokens": 8192,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_HATE_SPEECH",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_CIVIC_INTEGRITY",
+      "threshold": "OFF"
+    }],
+    "responseMimeType": "text/plain",
+    "enableCodeExecution": false,
+    "enableEnhancedCivicAnswers": true,
+    "enableSearchAsATool": false,
+    "enableBrowseAsATool": false,
+    "enableAutoFunctionResponse": false
+  },
+  "systemInstruction": {
+  },
+  "chunkedPrompt": {
+    "chunks": [{
+      "text": "Hi, let\u0027s build a very simple test. I say a0001, you say b0001, I say a0002, you say b0002, and as I increase, you keep increasing with me with the letter B",
+      "role": "user",
+      "tokenCount": 58
+    }, {
+      "text": "Okay, I understand. Let\u0027s begin! You start.\n",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 15
+    }, {
+      "text": "a0001",
+      "role": "user",
+      "tokenCount": 6
+    }, {
+      "text": "b0001\n",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 7
+    }, {
+      "text": "a0002\n",
+      "role": "user",
+      "tokenCount": 7
+    }, {
+      "text": "b0002\n",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 7
+    }, {
+      "text": "a0003",
+      "role": "user",
+      "tokenCount": 6
+    }, {
+      "text": "b0003\n",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 7
+    }, {
+      "text": "a0004",
+      "role": "user",
+      "tokenCount": 6
+    }, {
+      "text": "b0004\n",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 7
+    }, {
+      "text": "a0005",
+      "role": "user",
+      "tokenCount": 6
+    }, {
+      "text": "b0005\n",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 7
+    }, {
+      "text": "Thank you, that\u0027s all. Have a good day in the tensor world",
+      "role": "user"
+    }, {
+      "text": "You\u0027re welcome! Have a good day as well!\n",
+      "role": "model",
+      "finishReason": "STOP"
+    }],
+    "pendingInputs": [{
+      "text": "",
+      "role": "user"
+    }]
+  }
+}
